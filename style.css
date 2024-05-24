@@ -1,0 +1,246 @@
+* {
+  font-family: Encode Sans Expanded;
+  box-sizing: border-box;
+}
+
+.beranda {
+  background-color: black;
+  color: white;
+  margin: 10px;
+  align-items: center;
+  display: flex;
+}
+nav {
+  align-items: center;
+
+  top: 0;
+}
+nav img {
+  height: 30px;
+  display: none;
+}
+nav ul {
+  margin-top: 0px;
+  padding: 0px;
+  margin-bottom: 0px;
+  column-gap: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-top: 20px;
+  list-style: none;
+}
+li.nav-item a {
+  text-decoration: none;
+  background-color: rgb(201, 67, 67);
+  border-radius: 5px;
+  font-size: x-large;
+  font-weight: 600;
+  color: white;
+}
+nav a:hover {
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  font-weight: bold;
+}
+nav.nav-responsive {
+  right: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.728);
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 5px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+nav.nav-responsive img {
+  display: block;
+}
+.nav-responsive ul {
+  justify-content: flex-end;
+}
+.nav-responsive ul li {
+  margin-top: 0;
+}
+.content-profil {
+  padding: 50px;
+}
+#profil {
+  margin: 10px;
+  padding: 50px;
+  background-image: url(wave.svg);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  align-content: center;
+  background-color: gray;
+}
+#pekerjaan {
+  background-color: black;
+  color: white;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+#pekerjaan .content-pekerjaan {
+  padding: 50px;
+}
+#pekerjaan img {
+  height: 528px;
+}
+#hobby {
+  background-color: gray;
+  margin: 10px;
+
+  display: flex;
+
+  align-items: center;
+}
+#hobby img {
+  height: 528px;
+}
+.content-hobby {
+  align-items: center;
+  padding: 50px;
+}
+main aside {
+  position: fixed;
+  bottom: 120px;
+  left: 0;
+}
+main aside .sosmed {
+  display: flex;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.642);
+  border-radius: 0 10px 10px 0;
+}
+main aside .sosmed ul {
+  list-style-type: none;
+
+  padding: 0;
+}
+main aside .sosmed ul li {
+  padding: 6px;
+  align-items: center;
+}
+main aside .sosmed ul li a {
+  font-size: 50px;
+  color: rgb(250, 253, 250);
+}
+li a:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+  border-radius: 8px;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+@media screen and (max-width: 1024px) {
+  header img.foto-profil {
+    height: 300px;
+  }
+
+  #pekerjaan img {
+    height: 300px;
+  }
+  #hobby img {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .beranda {
+    flex-direction: column;
+  }
+  .beranda img.foto-profil {
+    height: 250px;
+  }
+  #profil {
+    height: 500px;
+  }
+  #pekerjaan img {
+    height: 250px;
+  }
+  #hobby img {
+    height: 250px;
+  }
+  aside .sosmed {
+    height: 200px;
+  }
+  main aside .sosmed ul li a {
+    font-size: 30px;
+  }
+  .content-profil {
+    padding: 10px;
+  }
+  .content-profil h1 {
+    font-size: 1.5em;
+  }
+  .content-profil h3 {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .beranda {
+    flex-direction: column;
+  }
+  li.nav-item a {
+    font-size: medium;
+    font-weight: 300;
+  }
+  #profil {
+    padding-top: 3px;
+
+    font-size: small;
+  }
+  #pekerjaan {
+    flex-direction: column-reverse;
+  }
+
+  #hobby {
+    flex-direction: column;
+  }
+  nav.nav-responsive ul {
+    justify-content: center;
+  }
+  nav.nav-responsive ul li a {
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 480px) {
+  .beranda img.foto-profil {
+    height: 150px;
+  }
+
+  #profil {
+    padding-top: 2px;
+    /* height: 110vh; */
+  }
+
+  #hobby img {
+    height: 150px;
+  }
+  #pekerjaan img {
+    height: 170px;
+  }
+  main aside .sosmed ul li a {
+    font-size: 25px;
+    padding: 5px;
+    align-items: center;
+    margin: 0;
+  }
+  nav.nav-responsive img {
+    display: none;
+  }
+  nav.nav-responsive {
+    justify-content: center;
+  }
+}
